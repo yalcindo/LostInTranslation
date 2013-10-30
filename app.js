@@ -48,14 +48,14 @@ app.get("/translatework",function(req,res){
     beglobal.translations.translate(info,
 	  function(err, results) {
 	          console.log("results",results)
-	    res.send("/translate",results);
+	    res.send(results);
     });
 });
 app.get("/quizwork",function(req,res){
 	var langTrans=req.query.lang;
     var dummyData={word1:"apple",word2:"pear",word3:"orange",word4:"cherry",
     word5:"melon",word6:"banana",word7:"carrot",word8:"fig"};
-	res.send("/quizwork",dummyData);
+	res.send(dummyData);
 });
 
 
