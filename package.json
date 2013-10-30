@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "express": "3.4.0",
-    "jade": "*"
+    "jade": "*",
+    "node-beglobal": "0.0.1-1"
   }
 }

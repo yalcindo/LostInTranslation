@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	h1 Yalcindo Master's Translation Page
+
+	form#translate-form
+		h3 translate from 
+			select#lang-from(name='translate-from')
+				option(value="spa") Spanish
+				option(value="eng") English
+		h3 translate to  
+			select#lang-to(name='translate-to')
+				option(value="spa") Spanish
+				option(value="eng") English
+			br
+			br
+			input.form-control#word(type="text" placeholder="Enter A Word")
+			br
+			input#submit-btn.btn.btn-danger(type='submit')
+	
+	include templates.html
+	.translation-div
+
+
+
+	link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js")
+	
+	script(src="/javascripts/main.js")

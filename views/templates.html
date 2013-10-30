@@ -1,0 +1,15 @@
+<script id="translation-template" type="text/x-handlebars-template">
+	<div class="message alert alert-info"><b>{{translation}}</b></div>
+</script>
+<script id="quiz-template" type="text/x-handlebars-template">
+	{{#each words}}
+		
+	<div class="col-md-3 word-div" data-id="{{@key}}">{{this}}<br><br><br><br>
+    <input type="text" class="input-location" placeholder="{{this}}">
+    </div>
+	{{/each}}
+</script>
+
+
+   
+  

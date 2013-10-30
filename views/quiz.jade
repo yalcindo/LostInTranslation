@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	h1 Quiz Page
+	h3 Pick the language you want to practice
+	form#quiz-form
+		select#quiz-dropdown(name='translate-from')
+			option(value="spa") Spanish
+			option(value="eng") English
+		input#submit-btn.btn.btn-danger(type='submit')
+
+
+	br
+	br
+	include templates.html
+	.row.quiz-div
+		
+	
+
+			
+
+
+
+
+
+
+
+	link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js")
+	link(rel="stylesheet", href="stylesheets/style.css")
+	script(src="/javascripts/main.js")

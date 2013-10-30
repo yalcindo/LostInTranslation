@@ -1,5 +1,25 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	h1= title
+	p Yalcindo Master's #{title}
+	a(href="/translate")
+		button.btn.btn-large.btn-danger.btn-translate(type="button" data-page="translate") Translate
+	p
+	a(href="/quiz")
+		button.btn.btn-large.btn-danger.btn-quiz(type="button") Quiz
+	p
+	button.btn.btn-large(type="button") Progress
+
+
+
+
+
+
+
+
+	link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js")
+	
+	script(src="/javascripts/main.js")
