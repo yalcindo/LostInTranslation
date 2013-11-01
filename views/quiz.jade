@@ -6,14 +6,19 @@ block content
 	form#quiz-form
 		select#quiz-dropdown(name='translate-from')
 			option(value="spa") Spanish
-			option(value="eng") English
+			option(value="fra") French
+			option(value="tur") Turkish
+		br 
+		br
 		input#submit-btn.btn.btn-danger(type='submit')
 
 
 	br
 	br
-	include templates.html
-	.row.quiz-div
+	.row.wrapper
+		.row.quizsuccess-div(data-ref="success")
+		.row.quiz-div
+
 		
 	
 
@@ -30,3 +35,4 @@ block content
 	script(src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js")
 	link(rel="stylesheet", href="stylesheets/style.css")
 	script(src="/javascripts/main.js")
+	include templates.html

@@ -2,12 +2,46 @@
 	<div class="message alert alert-info"><b>{{translation}}</b></div>
 </script>
 <script id="quiz-template" type="text/x-handlebars-template">
-	{{#each words}}
-		
-	<div class="col-md-3 word-div" data-id="{{@key}}">{{this}}<br><br><br><br>
-    <input type="text" class="input-location" placeholder="{{this}}">
+	<div class="col-md-3 word-div" data-id="{{words}}">
+	 	{{words}}<br><br><br>
+    	<input type="text" class="quiz-input form-control" placeholder="{{words}}">
     </div>
-	{{/each}}
+</script>
+
+<script id="quiz123-template" type="text/x-handlebars-template">
+	// {{#each words}}
+		
+	// <div class="col-md-3 word-div" data-id="{{this}}">{{this}}<br><br><br>
+ //    <input type="text" class="quiz-input form-control" placeholder="{{this}}">
+ //    </div>
+	// {{/each}}
+</script>
+
+<script id="restart-template" type="text/x-handlebars-template">
+	<div class="col-md-3 word-div" data-id="{{words}}">
+	 	{{words}}<br><br><br>
+    	<button type='button' class='btn btn-primary btn-restart'>StartOver</button>
+    </div>
+</script>
+<script id="next-template" type="text/x-handlebars-template">
+	<div class="col-md-3 word-div" data-id="{{words}}">
+	 	{{words}}<br><br><br>
+    	<button type='button' class='btn btn-primary btn-nextQuiz'>NextQuiz</button>
+    </div>
+</script>
+<script id="quizSuccess-template" type="text/x-handlebars-template">
+	<div class="col-md-3 word-div" data-id="{{words}}">
+	 	{{words}}
+    </div>
+</script>
+<script id="quizEnd-template" type="text/x-handlebars-template">
+	<div class="col-md-6 word-div" data-id="{{words}}">
+	 	     {{words}} <br>
+	 	<button type='button' class='btn btn-primary btn-random'>Random Quiz</button>
+	 	<button type='button' class='btn btn-primary btn-hardest'>Hardest Ten</button>
+	 	<button type='button' class='btn btn-primary btn-least'>Least Practiced</button>
+	 	<button type='button' class='btn btn-primary btn-mostrecent'>Most Recent</button>
+    </div>
 </script>
 
 
